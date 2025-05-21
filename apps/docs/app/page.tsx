@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Card } from "@repo/ui/card";
 import { Gradient } from "@repo/ui/gradient";
 import { TurborepoLogo } from "@repo/ui/turborepo-logo";
+import { Button } from "@repo/ui/components/ui/button";
 
 const LINKS = [
   {
@@ -35,6 +36,7 @@ export default function Page() {
           examples/with-tailwind -&nbsp;
           <code className="font-mono font-bold">docs</code>
         </p>
+        <Button variant={"default"} size={"lg"} className="text-red-500">test</Button>
         <div className="fixed bottom-0 left-0 flex items-end justify-center w-full h-48 lg:static lg:h-auto lg:w-auto">
           <a
             className="flex gap-2 p-8 pointer-events-none place-items-center lg:pointer-events-auto lg:p-0"
