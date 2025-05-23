@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 
 import './globals.css';
 
-const geist = Geist({ subsets: ['latin'] });
+const dmSansFont = DM_Sans({
+    weight: ['300', '400', '500', '600', '700'],
+    subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
     title: { default: 'Pick & Learn', template: '%s | Pick & Learn' },
@@ -38,7 +41,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang='ko-KR'>
-            <body className={geist.className}>{children}</body>
+            <body className={dmSansFont.className}>{children}</body>
         </html>
     );
 }
