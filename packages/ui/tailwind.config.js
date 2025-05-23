@@ -1,48 +1,58 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    100: 'var(--color-primary-100)',
+                    200: 'var(--color-primary-200)',
+                },
+                secondary: {
+                    100: 'var(--color-secondary-100)',
+                    200: 'var(--color-secondary-200)',
+                    300: 'var(--color-secondary-300)',
+                },
+                tertiary: {
+                    100: 'var(--color-tertiary-100)',
+                    200: 'var(--color-tertiary-200)',
+                    300: 'var(--color-tertiary-300)',
+                },
+                gray: {
+                    100: 'var(--color-gray-100)',
+                    200: 'var(--color-gray-200)',
+                    300: 'var(--color-gray-300)',
+                    400: 'var(--color-gray-400)',
+                    500: 'var(--color-gray-500)',
+                    600: 'var(--color-gray-600)',
+                    700: 'var(--color-gray-700)',
+                    800: 'var(--color-gray-800)',
+                    900: 'var(--color-gray-900)',
+                },
+                point: {
+                    green: {
+                        100: 'var(--color-point-green-100))',
+                        200: 'var(--color-point-green-200))',
+                    },
+                    blue: {
+                        100: 'var(--color-point-blue-100))',
+                        200: 'var(--color-point-blue-200))',
+                    },
+                    yellow: {
+                        100: 'var(--color-point-yellow-100))',
+                        200: 'var(--color-point-yellow-200))',
+                    },
+                },
+                error: {
+                    DEFAULT: 'var(--color-error))',
+                    100: 'var(--color-error-100)',
+                    200: 'var(--color-error-200)',
+                },
+                black: 'var(--color-black))',
+            },
         },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
-        },
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
-        },
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-      },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
-      },
     },
-  },
-  plugins: [require('tailwindcss-animate')],
-}; 
+    content: [
+        './app/**/*.{js,ts,jsx,tsx}',
+        '../../packages/ui/src/**/*.{js,ts,jsx,tsx}',
+    ],
+};

@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import '@repo/tailwind-config';
+@import '@repo/ui/styles.css';
 
 @theme inline {
     --color-primary-100: #a856fa;
