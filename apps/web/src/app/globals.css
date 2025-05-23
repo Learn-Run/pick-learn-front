@@ -2,13 +2,61 @@
 @import '@repo/tailwind-config';
 @import '@repo/ui/styles.css';
 
+@theme inline {
+    --color-primary-100: #a856fa;
+    --color-primary-200: #8645c8;
+    --color-secondary-100: #dfebff;
+    --color-secondary-200: #5856d6;
+    --color-secondary-300: #7507e3;
+    --color-tertiary-100: #a4a5ad;
+    --color-tertiary-200: #475569;
+    --color-tertiary-300: #494c5a;
+    --color-gray-100: #f9f9f9;
+    --color-gray-200: #f5f5f5;
+    --color-gray-300: #eeeeee;
+    --color-gray-400: #d9d9d9;
+    --color-gray-500: #acacac;
+    --color-gray-600: #8c8c8c;
+    --color-gray-700: #666666;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #292929;
+    --color-point-green-100: #ebfaef;
+    --color-point-green-200: #34c759;
+    --color-point-blue-100: #e6f2ff;
+    --color-point-blue-200: #007aff;
+    --color-point-yellow-100: #fffae6;
+    --color-point-yellow-200: #ffcc00;
+    --color-error: #eb5757;
+    --color-error-100: #fff3f3;
+    --color-error-200: #ff8595;
+    --color-black: #111111;
+}
 :root {
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-    }
-}
-
-body {
+    --color-primary-100: #a856fa;
+    --color-primary-200: #8645c8;
+    --color-secondary-100: #dfebff;
+    --color-secondary-200: #5856d6;
+    --color-secondary-300: #7507e3;
+    --color-tertiary-100: #a4a5ad;
+    --color-tertiary-200: #475569;
+    --color-tertiary-300: #494c5a;
+    --color-gray-100: #f9f9f9;
+    --color-gray-200: #f5f5f5;
+    --color-gray-300: #eeeeee;
+    --color-gray-400: #d9d9d9;
+    --color-gray-500: #acacac;
+    --color-gray-600: #8c8c8c;
+    --color-gray-700: #666666;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #292929;
+    --color-point-green-100: #ebfaef;
+    --color-point-green-200: #34c759;
+    --color-point-blue-100: #e6f2ff;
+    --color-point-blue-200: #007aff;
+    --color-point-yellow-100: #fffae6;
+    --color-point-yellow-200: #ffcc00;
+    --color-error: #eb5757;
+    --color-error-100: #fff3f3;
+    --color-error-200: #ff8595;
+    --color-black: #111111;
 }
